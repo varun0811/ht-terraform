@@ -19,7 +19,7 @@ variable "public_subnet_cidrs" {
 variable "private_subnet_cidrs" {
   description = "List of private subnet CIDRs"
   type        = list(string)
-  default     = ["10.0.3.0/24", "10.0.4.0/24"]
+  default     = ["10.0.3.0/21", "10.0.4.0/21"]
 }
 
 variable "azs" {
