@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 module "eks_cluster" {
-  source     = "../../modules/eks-cluster"
+  source     = "../../../modules/eks-cluster"
   cluster_name = var.cluster_name
   region     = var.region
   subnet_ids = var.subnet_ids        # pass private subnets

@@ -1,5 +1,5 @@
 module "eks_addons" {
-  source = "../../modules/eks-addons"
+  source = "../../../modules/eks-addons"
 
   cluster_name       = var.cluster_name
   vpc_cni_version    = var.vpc_cni_version

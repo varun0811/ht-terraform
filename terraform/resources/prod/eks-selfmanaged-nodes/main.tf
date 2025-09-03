@@ -24,7 +24,7 @@ data "terraform_remote_state" "vpc" {
 
 # Call self-managed node module and pass all required values
 module "eks_selfmanaged_nodes" {
-  source       = "../../modules/eks-selfmanaged"
+  source       = "../../../modules/eks-selfmanaged"
   cluster_name = data.terraform_remote_state.eks_cluster.outputs.cluster_name
   region       = var.region
   subnet_ids   = data.terraform_remote_state.vpc.outputs.private_subnet_ids
